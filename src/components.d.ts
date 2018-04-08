@@ -142,4 +142,31 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLTjaexaShowModalElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexaShowModalElement: {
+    prototype: HTMLTjaexaShowModalElement;
+    new (): HTMLTjaexaShowModalElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaexa-show-modal': HTMLTjaexaShowModalElement;
+  }
+  interface ElementTagNameMap {
+    'tjaexa-show-modal': HTMLTjaexaShowModalElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaexa-show-modal': JSXElements.TjaexaShowModalAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexaShowModalAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }

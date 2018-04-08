@@ -27,6 +27,9 @@ export class AppHome {
           <ion-button href={'/profile/stencil'}>
             Profile page
           </ion-button>
+          <ion-button href={'/show-modal'}>
+            Show Modal page
+          </ion-button>          
         </ion-content>
       </ion-page>
     );

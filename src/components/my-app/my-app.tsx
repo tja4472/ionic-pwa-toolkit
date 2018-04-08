@@ -44,7 +44,7 @@ export class MyApp {
           <ion-router useHash={false}>
             <ion-route url='/' component='app-home'></ion-route>
             <ion-route url='/profile/:name' component='app-profile'></ion-route>
-
+            <ion-route url='/show-modal' component='tjaexa-show-modal'></ion-route>
             <ion-nav></ion-nav>
           </ion-router>
         </main>
