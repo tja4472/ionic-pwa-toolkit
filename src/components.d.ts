@@ -144,6 +144,33 @@ declare global {
 
 
 declare global {
+  interface HTMLTjaexaModalFormElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexaModalFormElement: {
+    prototype: HTMLTjaexaModalFormElement;
+    new (): HTMLTjaexaModalFormElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaexa-modal-form': HTMLTjaexaModalFormElement;
+  }
+  interface ElementTagNameMap {
+    'tjaexa-modal-form': HTMLTjaexaModalFormElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaexa-modal-form': JSXElements.TjaexaModalFormAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexaModalFormAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
   interface HTMLTjaexaShowModalElement extends HTMLStencilElement {
 
   }

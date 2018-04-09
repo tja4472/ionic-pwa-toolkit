@@ -1,10 +1,10 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'tjaexa-show-modal',
-  styleUrl: 'tjaexa-show-modal.scss',
+  tag: 'tjaexa-modal-form',
+  styleUrl: 'tjaexa-modal-form.scss',
 })
-export class ShowModal {
+export class ModalForm {
   render() {
     return [
       <ion-header>
