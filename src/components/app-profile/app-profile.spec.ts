@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { AppProfile } from './app-profile';
 
 describe('app-profile', () => {
@@ -6,6 +6,21 @@ describe('app-profile', () => {
     expect(new AppProfile()).toBeTruthy();
   });
 
+  it('should be the new way', async () => {
+    const window = new TestWindow();
+    const element = await window.load({
+      components: [AppProfile],
+      html: '<app-profile></app-profile>'
+    });
+    expect(element.textContent).toEqual('Ionic PWA ToolkitHello! My name is . My name was passed in through a route param!');
+  
+    element.name = 'George';
+    await window.flush();
+  
+    expect(element.textContent).toEqual('Ionic PWA ToolkitHello! My name is George. My name was passed in through a route param!');
+  });
+
+/*  
   describe('rendering', () => {
     let element;
     beforeEach(async () => {
@@ -34,4 +49,5 @@ describe('app-profile', () => {
       expect(pElement.textContent).toEqual('Hello! My name is stencil. My name was passed in through a route param!');
     });
   });
+*/  
 });

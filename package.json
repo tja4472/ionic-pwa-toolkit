@@ -17,15 +17,15 @@
   },
   "dependencies": {
     "@ionic/core": "4.0.0-alpha.1",
-    "@stencil/core": "0.7.15",
-    "@stencil/router": "latest"
+    "@stencil/core": "0.7.20",
+    "@stencil/router": "0.0.28"
   },
   "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/sass": "0.0.2",
-    "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@stencil/dev-server": "0.0.18",
+    "@stencil/sass": "0.0.3",
+    "@stencil/utils": "0.0.4",
+    "@types/jest": "22.2.3",
+    "jest": "22.4.3"
   },
   "repository": {
     "type": "git",
