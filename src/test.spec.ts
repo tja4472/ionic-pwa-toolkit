@@ -12,3 +12,13 @@ describe('Google', () => {
       await expect(page).toMatch('google')
     })
   })
+
+  describe('pwa-toolkit', () => {
+    beforeAll(async () => {
+      await page.goto('http://localhost:3335/')
+    })
+  
+    it('should display "Ionic PWA Toolkit" text on page', async () => {
+      await expect(page).toMatch('Ionic PWA Toolkit')
+    })
+  })
