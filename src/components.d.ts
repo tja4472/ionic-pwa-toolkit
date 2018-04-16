@@ -99,6 +99,43 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface E2eAttributeBasic {
+      'customAttr': string;
+      'multiWord': string;
+      'single': string;
+    }
+  }
+
+  interface HTMLE2eAttributeBasicElement extends StencilComponents.E2eAttributeBasic, HTMLStencilElement {}
+
+  var HTMLE2eAttributeBasicElement: {
+    prototype: HTMLE2eAttributeBasicElement;
+    new (): HTMLE2eAttributeBasicElement;
+  };
+  interface HTMLElementTagNameMap {
+    'e2e-attribute-basic': HTMLE2eAttributeBasicElement;
+  }
+  interface ElementTagNameMap {
+    'e2e-attribute-basic': HTMLE2eAttributeBasicElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'e2e-attribute-basic': JSXElements.E2eAttributeBasicAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface E2eAttributeBasicAttributes extends HTMLAttributes {
+      'customAttr'?: string;
+      'multiWord'?: string;
+      'single'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface LazyImg {
       'alt': string;
       'src': string;
